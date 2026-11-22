@@ -1,0 +1,11 @@
+services:
+  borrow-board:
+    build: .
+    container_name: borrow-board
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      - ./credentials:/app/credentials:ro
+    restart: unless-stopped

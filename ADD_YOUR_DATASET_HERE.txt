@@ -1,0 +1,9 @@
+DATASET UPDATE GUIDE
+
+1. Your real, verified records should be entered into the Google Sheet tabs.
+2. Keep the sheet names and row-1 headers exactly as documented in README.md.
+3. The Excel template supplied by your instructor is copied into this folder as a reference.
+4. Do not paste private student information into GitHub. The .gitignore excludes credentials and .env.
+5. The backend reads your live Google Sheet when DEMO_MODE=false.
+
+The mapping is in app/sheets.py -> SHEET_HEADERS.
